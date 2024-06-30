@@ -1,0 +1,89 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.393);  /* Grey overlay with 50% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.headline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem; /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+  background-color: #000000;
+  margin-bottom: 7rem;
+  opacity: 50%;
+}
+
+.headline {
+  animation: scroll-text 12s linear infinite;
+  font-size: 2rem;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-icon {
+  margin-right: 1rem;
+  color: grey;
+}
+
+.search-bar {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.mic-icon {
+  margin-left: 1rem;
+  color: grey;
+}

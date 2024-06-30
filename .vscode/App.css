@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #264653;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E9C46A;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Adjust the height of the logo as needed */
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem; /* Increased font size for navigation links */
+}
+
+.home {
+  text-align: center;
+  padding-top: 5rem; /* Adjusted for fixed navbar */
+  padding: 1rem;
+}
+
+.greeting {
+  padding-top: 20rem; /* Added margin to increase the gap */
+  margin-top: 3rem;
+}
+
+.search-container {
+  margin: 2rem auto;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.search-icon {
+  margin-left: 0.5rem;
+  color: #E76F51; /* Color of the magnifying glass icon */
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+}
+
+.voice-icon {
+  margin-right: 0.5rem;
+  color: #2a9d8f; /* Color of the voice icon */
+}
+
+@keyframes scroll-text {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  margin-top: 4rem; /* Adjust for the fixed navbar */
+}
+
+.operation-box {
+  background-color: #2A9D8F;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 2rem auto;
+  color: white;
+  text-align: center;
+}
+
+.operation-box label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.operation-box input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.operation-box button {
+  background-color: #E76F51;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
